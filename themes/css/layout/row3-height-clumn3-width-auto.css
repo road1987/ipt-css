@@ -1,0 +1,61 @@
+/*layout.css*/
+html {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:90px 0px 50px 0px;
+    overflow:hidden;
+}
+html, body {
+    height:100%;
+}
+
+#header {
+	position:relative;
+    top:-90px;
+	width : 100%;
+	height : 80px;	
+	background : #EEEEEE;
+	border-bottom : 2px solid  #F27B03;	
+}
+
+#main {
+	position : relative;
+	top : -90px;
+	height : 100%;
+	margin : 10px auto;
+}
+
+#sidebar-left {
+	position : absolute;
+	width : 240px;
+	height : 100%;
+	background : #DDDDDD;
+	top : 0px;
+	left : 0px;
+}
+
+#mainContent {
+	margin : 0px 220px 0px 250px;
+	height : 100%;
+	background : pink;
+}
+
+#siderbar-right {
+	position : absolute;
+	width : 210px;
+	height : 100%;
+	top : 0px;
+	right : 0px;	
+	background : #DDDDDD;
+}
+
+#footer {
+    position:relative;
+    top:-90px;
+	width : 100%;
+	height : 40px;
+	background : #EEEEEE;
+	text-align : center;
+	line-height : 30px;
+}

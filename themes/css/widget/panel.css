@@ -1,0 +1,46 @@
+/*widget.css*/
+.panel{
+  border: 1px solid #EEEEEE;
+  background : #F7F6F4;
+  background: -moz-linear-gradient(center top , #F7F6F4, #EBE8E2) repeat scroll 0 0 transparent;
+  box-shadow: 0 1px 5px #AAAAAA;
+}
+
+.panel-header{
+	padding : 6px 10px;
+	background: none repeat scroll 0 0 #DDDDDD;
+	position : relative;
+}
+
+.panel-title{
+	font-size : 14px;	
+	font-weight : bold;
+}
+
+.panel-title-icon{
+	display :inline-block;
+	width : 16px;
+	height : 16px;
+	background : white;
+	margin-right : 4px;
+	vertical-align : middle;
+}
+
+.panel-titlebar-left{
+	height : 100%;
+	position : absolute;
+	top : 0px;
+	left : 0px;	
+}
+
+.panel-titlebar-right{
+	height : 100%;
+	position : absolute;
+	top : 0px;
+	right : 0px;	
+}
+
+.panel-body {
+	padding : 10px;
+	background : white;
+}

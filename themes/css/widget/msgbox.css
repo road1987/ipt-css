@@ -1,0 +1,83 @@
+/*widget.css*/
+.msgbox-info,
+.msgbox-warn,
+.msgbox-error,
+.msgbox-question,
+.msgbox-success{
+	padding : 16px;
+	font-size : 14px;
+	line-height : 22px;
+	position : relative;
+	border : 1px solid black;
+	zoom : 1; /*fix ie 6 position absolute bug*/
+}
+
+.msgbox-info{
+	background : #D9EDF7;
+	border-color : #49AFCD;
+}
+
+.msgbox-success {
+	background : #DDFFDD;
+	border-color : #009900;
+}
+
+.msgbox-warn {
+	background : #FCF8E3;
+	border-color : #FFAA55;	
+}
+
+.msgbox-error {
+	background : #FFCCCC;
+	border-color : #CC0000;
+}
+
+.msgbox-question {
+	background : #ECECF0;
+	border-color : #999999;
+}
+
+
+.msgbox-info .msgbox-icon{
+	background : url('../../icons/info.gif') no-repeat;
+}
+
+.msgbox-success .msgbox-icon{
+	background : url('../../icons/ok.gif') no-repeat;
+}
+
+.msgbox-warn .msgbox-icon{
+	background : url('../../icons/warn.gif') no-repeat;
+}
+
+.msgbox-error .msgbox-icon{
+	background : url('../../icons/forbid.gif') no-repeat;
+}
+
+.msgbox-question .msgbox-icon{
+	background : url('../../icons/help.png') no-repeat;
+}
+
+.msgbox-icon {
+	display : block;
+	width : 16px;
+	height  : 16px;
+	position : absolute;
+	top : 18px;
+	left : 12px;
+	background : white;
+	background-position : 2px 2px;
+}
+
+.msgbox-main {
+	margin : 0px 20px;	
+}
+
+.msgbox-header {
+	font-weight : bold;	
+	font-size : 16px;
+}
+
+.msgbox-content {
+	font-size : 14px;
+}
