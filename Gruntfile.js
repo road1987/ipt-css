@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 	              paths: ["themes"]
 	            },
 	            files: {
-	              "themes/ipt.css": "themes/ipt.less"
+	              "themes/css/ipt.css": "themes/css/ipt.less"
 	            }
 	          },
 	          production: {
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 	              yuicompress: true
 	            },
 	            files: {
-	              "themes/ipt-min.css": "themes/ipt.less"
+	              "themes/css/ipt-min.css": "themes/css/ipt.less"
 	            }
 	          }
         }
