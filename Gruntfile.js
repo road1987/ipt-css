@@ -3,22 +3,47 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg : grunt.file.readJSON('package.json'),
         less : {
+        	reset : {
+		       files: {
+		          "themes/css/reset.css": "themes/less/reset.less"
+		       }        		
+        	},
+        	
+        	function_ : {
+   		       files: {
+   		          "themes/css/function.css": "themes/less/function.less"
+   		       }          		
+          	},
+        	
+        	typography : {
+ 		       files: {
+ 		          "themes/css/typography.css": "themes/less/typography.less"
+ 		       }          		
+        	},
+        	
+        	form : {
+  		       files: {
+  		          "themes/css/form.css": "themes/less/form.less"
+  		       }          		
+         	},
+        	
 	        development: {
 	            options: {
 	              paths: ["themes"]
 	            },
 	            files: {
-	              "themes/css/ipt.css": "themes/css/ipt.less"
+	              "themes/css/ipt.css": "themes/less/ipt.less"
 	            }
-	          },
-	          production: {
+	         },
+	         
+	         production: {
 	            options: {
 	              yuicompress: true
 	            },
 	            files: {
-	              "themes/css/ipt-min.css": "themes/css/ipt.less"
+	              "themes/css/ipt-min.css": "themes/less/ipt.less"
 	            }
-	          }
+	         }
         }
     });
 
