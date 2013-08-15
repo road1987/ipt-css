@@ -1,3 +1,61 @@
-.grid {
-	
+/* =layout-grid  */
+.grid12 , .grid16 , .grid12 .row, .grid16 .row,  .grid12 [class*=span] , .grid16 [class*=span]{
+	.fn-box-b;
+	display : block;
+}
+
+.grid12 ,
+.grid16 {
+	.row [class*=span] {
+			float : left;
+			padding-left: @gutter/2px;
+			padding-right : @gutter/2px;
+	}
+}
+
+.grid12 , 
+.grid16 { 
+	.row:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.grid12 {
+	.row { 
+		.span1{ width : 8.3333%; }
+		.span2{ width : 16.6666%; }
+		.span3{ width : 24.9999%; }
+		.span4{ width : 33.3332%; }
+		.span5{ width : 41.6665%; }
+		.span6{ width : 50%; }
+		.span7{ width : 58.3333%; }
+		.span8{ width : 66.6666%; }
+		.span9{ width : 74.9999%; }
+		.span10{ width : 83.3332%; }
+		.span11{ width : 91.6665%; }
+		.span12{ width : 100%; }
+	}
+}
+
+.grid16 {
+	.row { 
+		.span1{ width : 6.25%; }
+		.span2{ width : 12.5%; }
+		.span3{ width : 18.75%; }
+		.span4{ width : 25%; }
+		.span5{ width : 31.25%; }
+		.span6{ width : 37.5%; }
+		.span7{ width : 43.75%; }
+		.span8{ width : 50%; }
+		.span9{ width : 56.25%; }
+		.span10{ width : 62.5%; }
+		.span11{ width : 68.75%; }
+		.span12{ width : 75%; }
+		.span13{ width : 81.25%; }
+        .span14{ width : 87.5%; }
+		.span15{ width : 92.75%; }
+		.span16{ width : 100%; }
+	}
 }
