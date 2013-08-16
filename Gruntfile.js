@@ -27,6 +27,12 @@ module.exports = function(grunt) {
   		       }          		
          	},
           	
+         	grid : {
+   		       files: {
+   		          "themes/css/grid.css": "themes/less/grid.less"
+   		       }
+         	},
+         	
 	        development: {
 	            options: {
 	              paths: ["themes"]

@@ -1,5 +1,6 @@
 /* function set */
 /* typography */
+/* function */
 /* layout-grid*/
 /*function.css*/
 .fn-clear {
@@ -11,6 +12,7 @@
 .fn-fr {
   float: right;
 }
+/* for text*/
 .fn-t-left {
   text-align: left;
 }
@@ -24,13 +26,13 @@
   color: #999999;
 }
 .fn-t-warning {
-  color: #C09853;
+  color: #c09853;
 }
 .fn-t-error {
-  color: #B94A48;
+  color: #b94a48;
 }
 .fn-t-info {
-  color: #3A87AD;
+  color: #3a87ad;
 }
 .fn-t-success {
   color: #468847;
@@ -48,7 +50,7 @@
   font-size: 18px;
 }
 .fn-t-xlarge {
-  font-size: 22px;
+  font-size: 24px;
 }
 .fn-t-normal {
   font-weight: normal;
@@ -129,10 +131,10 @@
   border-radius: 5px 0px 0px 0px;
 }
 .fn-br-tr {
-  -moz-border-radius: 0px 5px 0px 0px;
-  -khtml-border-radius: 0px 5px 0px 0px;
-  -webkit-border-radius: 0px 5px 0px 0px;
-  border-radius: 0px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -khtml-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
 }
 .fn-br-bl {
   -moz-border-radius: 0px 0px 5px 0px;
@@ -145,27 +147,6 @@
   -khtml-border-radius: 0px 0px 0px 5px;
   -webkit-border-radius: 0px 0px 0px 5px;
   border-radius: 0px 0px 0px 5px;
-}
-.fn-bg-green {
-  background-color: #64BE11;
-}
-.fn-bg-blue {
-  background-color: #03AEDA;
-}
-.fn-bg-yellow {
-  background-color: #E0C216;
-}
-.fn-bg-orange {
-  background-color: #E35F1E;
-}
-.fn-bg-navy {
-  background-color: #1173BE;
-}
-.fn-bg-gray {
-  background-color: #6C6C6C;
-}
-.fn-bg-red {
-  background-color: #C5254B;
 }
 .fn-box-b {
   -webkit-box-sizing: border-box;

@@ -13,6 +13,7 @@
 	float: right;
 }
 
+/* for text*/
 .fn-t-left {
 	text-align : left;	
 }
@@ -26,43 +27,43 @@
 }
 
 .fn-t-muted {
-    color: #999999;	
+    color: @text-color-muted;	
 }
 
 .fn-t-warning {
-    color : #C09853;
+    color : @text-color-warning;
 }
 
 .fn-t-error {
-    color : #B94A48;
+    color : @text-color-error;
 }
 
 .fn-t-info {
-	color: #3A87AD;	
+	color: @text-color-info	
 }
 
 .fn-t-success {
-	color: #468847;
+	color: @text-color-success;
 }
 
 .fn-t-mini {
-	font-size : 10.5px;
+	font-size : @text-size-mini ;
 }
 
 .fn-t-small {
-    font-size: 12px;
+    font-size: @text-size-small;
 }
 
 .fn-t-primary{
-    font-size : 14px;
+    font-size : @text-size-primary;
 }
 
 .fn-t-large {
-	font-size : 18px;
+	font-size : @text-size-large;
 }
 
 .fn-t-xlarge {
-	font-size : 22px;
+	font-size : @text-size-xlarge;
 }
 
 .fn-t-normal {
@@ -155,51 +156,23 @@
 }
 
 .fn-br {
-	.border-radius(5px);
+	.border-radius(@border-radius-default);
 }
 
 .fn-br-tl{
-	.border-radius(5px , 0px , 0px , 0px);
+	.border-radius(@border-radius-default , 0px , 0px , 0px);
 }
 
 .fn-br-tr{
-	.border-radius(0px , 5px , 0px , 0px);
+	.border-radius(@border-radius-default , 5px , 0px , 0px);
 }
 
 .fn-br-bl{
-	.border-radius(0px , 0px , 5px , 0px);
+	.border-radius(0px , 0px , @border-radius-default , 0px);
 }
 
 .fn-br-br{
-	.border-radius(0px , 0px , 0px , 5px);
-}
-
-.fn-bg-green {
-	background-color : #64BE11;
-}
-
-.fn-bg-blue {
-	background-color : #03AEDA;
-}
-
-.fn-bg-yellow {
-	background-color : #E0C216;	
-}
-
-.fn-bg-orange {
-	background-color : #E35F1E;	
-}
-
-.fn-bg-navy {
-	background-color : #1173BE;	
-}
-
-.fn-bg-gray {
-	background-color : #6C6C6C;	
-}
-
-.fn-bg-red {
-	background-color : #C5254B;	
+	.border-radius(0px , 0px , 0px , @border-radius-default);
 }
 
 .fn-box-b {
