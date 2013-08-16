@@ -1,11 +1,11 @@
 @border-radius-default: 5px;
-
-.border-radius(@radius:5px){
-    -moz-border-radius: @radius;
-    -khtml-border-radius: @radius;
-    -webkit-border-radius: @radius;
-    -webkit-border-radius: @radius;
-    border-radius: @radius;
+/* function set */
+.border-radius(@radius-tl:5px , @radius-tr:5px  , @radius-bl:5px  , @radius-br:5px ){
+    -moz-border-radius: @radius-tl @radius-tr   @radius-bl @radius-br;
+    -khtml-border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
+    -webkit-border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
+    -webkit-border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
+    border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
 };
 
 /* typography */

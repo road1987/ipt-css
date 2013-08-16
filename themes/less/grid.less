@@ -1,21 +1,34 @@
 /* =layout-grid  */
-.grid12 , .grid16 , .grid12 .row, .grid16 .row,  .grid12 [class*=span] , .grid16 [class*=span]{
+.grid12 , .grid16 {
 	.fn-box-b;
 	display : block;
+
+	.row , row-fluid{
+		.fn-box-b;
+		display : block;	
+	}
+	[class*=span] {
+		.fn-box-b;
+		display : block;	
+	}
 }
 
 .grid12 ,
 .grid16 {
-	.row [class*=span] {
+	.row ,
+	.row-fluid {
+	 	[class*=span] {
 			float : left;
 			padding-left: @gutter/2px;
 			padding-right : @gutter/2px;
+		}
 	}
 }
 
 .grid12 , 
 .grid16 { 
-	.row:after{
+	.row:after,
+	.row-fluid:after{
 		content: "";
 		display: block;
 		clear: both;
@@ -23,7 +36,7 @@
 }
 
 .grid12 {
-	.row { 
+	.row-fluid { 
 		.span1{ width : 8.3333%; }
 		.span2{ width : 16.6666%; }
 		.span3{ width : 24.9999%; }
@@ -40,7 +53,7 @@
 }
 
 .grid16 {
-	.row { 
+	.row-fluid { 
 		.span1{ width : 6.25%; }
 		.span2{ width : 12.5%; }
 		.span3{ width : 18.75%; }
