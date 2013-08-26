@@ -93,3 +93,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.fn-box-c {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
