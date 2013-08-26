@@ -127,8 +127,8 @@
 .grid12 .row-fluid [class*=span],
 .grid16 .row-fluid [class*=span] {
   float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  1padding-left: 10px;
+  1padding-right: 10px;
 }
 .grid12 .row:after,
 .grid16 .row:after,
