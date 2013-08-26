@@ -376,6 +376,42 @@ h6 {
 .grid12 .row .span12 {
   width: 960px;
 }
+.grid12 .row .offset1 {
+  margin-left: 80px;
+}
+.grid12 .row .offset2 {
+  margin-left: 160px;
+}
+.grid12 .row .offset3 {
+  margin-left: 240px;
+}
+.grid12 .row .offset4 {
+  margin-left: 320px;
+}
+.grid12 .row .offset5 {
+  margin-left: 400px;
+}
+.grid12 .row .offset6 {
+  margin-left: 480px;
+}
+.grid12 .row .offset7 {
+  margin-left: 560px;
+}
+.grid12 .row .offset8 {
+  margin-left: 640px;
+}
+.grid12 .row .offset9 {
+  margin-left: 720px;
+}
+.grid12 .row .offset10 {
+  margin-left: 800px;
+}
+.grid12 .row .offset11 {
+  margin-left: 880px;
+}
+.grid12 .row .offset12 {
+  margin-left: 960px;
+}
 .grid12 .row-fluid .span1 {
   width: 8.3333%;
 }
@@ -411,6 +447,42 @@ h6 {
 }
 .grid12 .row-fluid .span12 {
   width: 100%;
+}
+.grid12 .row-fluid .offset1 {
+  margin-left: 8.3333%;
+}
+.grid12 .row-fluid .offset2 {
+  margin-left: 16.6666%;
+}
+.grid12 .row-fluid .offset3 {
+  margin-left: 24.9999%;
+}
+.grid12 .row-fluid .offset4 {
+  margin-left: 33.3332%;
+}
+.grid12 .row-fluid .offset5 {
+  margin-left: 41.6665%;
+}
+.grid12 .row-fluid .offset6 {
+  margin-left: 50%;
+}
+.grid12 .row-fluid .offset7 {
+  margin-left: 58.3333%;
+}
+.grid12 .row-fluid .offset8 {
+  margin-left: 66.6666%;
+}
+.grid12 .row-fluid .offset9 {
+  margin-left: 74.9999%;
+}
+.grid12 .row-fluid .offset10 {
+  margin-left: 83.3332%;
+}
+.grid12 .row-fluid .offset11 {
+  margin-left: 91.6665%;
+}
+.grid12 .row-fluid .offset12 {
+  margin-left: 100%;
 }
 .grid16 .row .span1 {
   width: 60px;
@@ -460,6 +532,54 @@ h6 {
 .grid16 .row .span16 {
   width: 960px;
 }
+.grid16 .row .offset1 {
+  margin-left: 60px;
+}
+.grid16 .row .offset2 {
+  margin-left: 120px;
+}
+.grid16 .row .offset3 {
+  margin-left: 180px;
+}
+.grid16 .row .offset4 {
+  margin-left: 240px;
+}
+.grid16 .row .offset5 {
+  margin-left: 300px;
+}
+.grid16 .row .offset6 {
+  margin-left: 360px;
+}
+.grid16 .row .offset7 {
+  margin-left: 420px;
+}
+.grid16 .row .offset8 {
+  margin-left: 480px;
+}
+.grid16 .row .offset9 {
+  margin-left: 540px;
+}
+.grid16 .row .offset10 {
+  margin-left: 600px;
+}
+.grid16 .row .offset11 {
+  margin-left: 660px;
+}
+.grid16 .row .offset12 {
+  margin-left: 720px;
+}
+.grid16 .row .offset13 {
+  margin-left: 780px;
+}
+.grid16 .row .offset14 {
+  margin-left: 840px;
+}
+.grid16 .row .offset15 {
+  margin-left: 900px;
+}
+.grid16 .row .offset16 {
+  margin-left: 960px;
+}
 .grid16 .row-fluid .span1 {
   width: 6.25%;
 }
@@ -507,4 +627,52 @@ h6 {
 }
 .grid16 .row-fluid .span16 {
   width: 100%;
+}
+.grid16 .row-fluid .offset1 {
+  margin-left: 6.25%;
+}
+.grid16 .row-fluid .offset2 {
+  margin-left: 12.5%;
+}
+.grid16 .row-fluid .offset3 {
+  margin-left: 18.75%;
+}
+.grid16 .row-fluid .offset4 {
+  margin-left: 25%;
+}
+.grid16 .row-fluid .offset5 {
+  margin-left: 31.25%;
+}
+.grid16 .row-fluid .offset6 {
+  margin-left: 37.5%;
+}
+.grid16 .row-fluid .offset7 {
+  margin-left: 43.75%;
+}
+.grid16 .row-fluid .offset8 {
+  margin-left: 50%;
+}
+.grid16 .row-fluid .offset9 {
+  margin-left: 56.25%;
+}
+.grid16 .row-fluid .offset10 {
+  margin-left: 62.5%;
+}
+.grid16 .row-fluid .offset11 {
+  margin-left: 68.75%;
+}
+.grid16 .row-fluid .offset12 {
+  margin-left: 75%;
+}
+.grid16 .row-fluid .offset13 {
+  margin-left: 81.25%;
+}
+.grid16 .row-fluid .offset14 {
+  margin-left: 87.5%;
+}
+.grid16 .row-fluid .offset15 {
+  margin-left: 92.75%;
+}
+.grid16 .row-fluid .offset16 {
+  margin-left: 100%;
 }
