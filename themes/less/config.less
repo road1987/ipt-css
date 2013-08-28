@@ -17,6 +17,7 @@
 	background: -o-linear-gradient(top, @start-color 0%,@end-color 100%); /* Opera11.10+ */
 	background: -ms-linear-gradient(top, @start-color 0%,@end-color 100%); /* IE10+ */
 	background: linear-gradient(top, @start-color 0%,@end-color 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@start-color', endColorstr='@end-color',GradientType=0 ); /* IE6-9 */
 };
 
 .box-shadow( @offset-h : 0px , @offset-v : 0px , @blur : 5px, @spread-distance : 0px , @shadow-color : "", @inset-outset : ""   ){
