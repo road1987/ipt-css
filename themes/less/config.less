@@ -9,6 +9,22 @@
     border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
 };
 
+
+.gradient-line-top-bottom(@start-color : #EEEEEE , @end-color : #AAAAAA ){
+	background: -moz-linear-gradient(top, @start-color 0%, @end-color 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start-color), color-stop(100%,@end-color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, @start-color 0%,@end-color 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, @start-color 0%,@end-color 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, @start-color 0%,@end-color 100%); /* IE10+ */
+	background: linear-gradient(top, @start-color 0%,@end-color 100%); /* W3C */
+};
+
+.box-shadow( @offset-h : 0px , @offset-v : 0px , @blur : 5px, @spread-distance : 0px , @shadow-color : "", @inset-outset : ""   ){
+  -webkit-box-shadow:  @inset-outset @offset-h @offset-v @blur @spread-distance @shadow-color;
+     -moz-box-shadow: @inset-outset @offset-h @offset-v @blur @spread-distance @shadow-color;
+          box-shadow: @inset-outset @offset-h @offset-v @blur @spread-distance @shadow-color;
+}
+
 /* typography */
 @global-background : #FFFFFF;
 @global-color : #333333;
