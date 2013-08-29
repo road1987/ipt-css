@@ -26,7 +26,16 @@
           box-shadow: @inset-outset @offset-h @offset-v @blur @spread-distance @shadow-color;
       	  1-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='@end-color')"; /* For IE 8 */
               1filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='@end-color'); /* For IE 5.5 - 7 */
+};
+
+.transition(@config){
+    -moz-transition: @config;
+    -webkit-transition: @config;
+    -o-transition: @config;
+    transition: @config;
 }
+
+
 
 /* typography */
 @global-background : #FFFFFF;
