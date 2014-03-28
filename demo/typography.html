@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<title>ipt-css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="../themes/css/ipt.css" rel="stylesheet" type="text/css"/>
+<link href="themes/css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<div id="main">
+		<h1 class="fn-t-center"> typography </h1>
+		
+		<hr/>
+		<!-- #header -->
+		<h2><a href="#header">Headings</a></h2>
+		<div>h1~h6, .h1~.h6</div>
+		<hr/>
+		<div class="examplebox">
+			<div class="result">
+				<h1>h1.heading 1 <small>Secondary  text</small></h1>
+				<h2>h2.heading 2 <small>Secondary  text</small></h2>
+				<h3>h3.heading 3 <small>Secondary  text</small></h3>
+				<h4>h4.heading 4 <small>Secondary  text</small></h4>
+				<h5>h5.heading 5 <small>Secondary  text</small></h5>		
+				<h6>h6.heading 6 <small>Secondary  text</small></h6>	
+			</div>
+			<div class="code">
+<pre>
+<h1>h1.heading 1 <small>Secondary  text</small></h1>
+<h2>h2.heading 2 <small>Secondary  text</small></h2>
+<h3>h3.heading 3 <small>Secondary  text</small></h3>
+<h4>h4.heading 4 <small>Secondary  text</small></h4>
+<h5>h5.heading 5 <small>Secondary  text</small></h5>
+<h6>h6.heading 6 <small>Secondary  text</small></h6>
+</pre>
+			</div>
+		</div>
+
+		
+		<hr/>
+		<!-- #bodycopy -->
+		<h2><a href="#bodycopy">Body copy</a></h2>
+		<p>
+			<small>
+				body{color: #333333; font-family: "微软雅黑","Microsoft YaHei","宋体",verdana; font-size: 14px; line-height: 22px;}
+				p{margin-bottom:10px}
+			</small>
+		</p>	
+		<div class="examplebox">	
+			<div class="result">
+				<p>Love your neighbor as yourself. 　 Resentment kills a fool, and envy slays the simple. 　Does a wild donkey bray when it has grass, or an ox bellow when it has fodder? 　 </p>
+				<p>I will speak out in the anguish of my spirit, I will complain in the bitterness of my soul.  </p>
+			</div>
+		</div>
+		
+		<h3>Lead body copy</h3>
+		<div class="examplebox">
+			<div class="result">
+				<p class="lead">show the lead text(lead body copy)</p>
+				<p>I will speak out in the anguish of my spirit, I will complain in the bitterness of my soul.  </p>
+			</div>
+			<div class="code">
+<pre>
+<p class="lead">show the lead text(lead body copy)</p>	
+<p>I will speak out in the anguish of my spirit, I will complain in the bitterness of my soul.  </p>
+</pre>
+			</div>
+		</div>
+	
+	
+	<!-- #emphasis -->
+	<h2><a href="#emphasis">Emphasis</a></h2>
+	
+	<h3>small text</h3>
+	<div class="examplebox">
+		<div class="result">
+			<small>Love your neighbor as yourself (with small tag)</small>
+			<div class="small">Love your neighbor as yourself ( with small class ".small" )</div>
+		</div>
+		<div class="code">
+<pre>
+<small>Love your neighbor as yourself(with small tag)</small>
+<div class="small">Love your neighbor as yourself( with small class ".small" )</div>
+</pre>
+		</div>
+	</div>
+	
+	<h3>bold</h3>
+	<div class="examplebox">
+		<div class="result">
+			<strong>Love your neighbor as yourself (with small tag)</strong>
+			<div class="strong">Love your neighbor as yourself ( with small class ".small" )</div>
+		</div>
+		<div class="code">
+<pre>
+<strong>Love your neighbor as yourself(with small tag)</strong>
+<div class="strong">Love your neighbor as yourself( with small class ".small" )</div>
+</pre>
+		</div>
+	</div>	
+	
+	
+	<h3>Italics</h3>
+	For emphasizing a snippet of text with italics.
+	<div class="examplebox">
+		<div class="result">
+			<p>Love your neighbor as <em>yourself</em></p>
+		</div>
+		<div class="code">
+<pre>
+<p>Love your neighbor as <em>yourself</em></p>
+</pre>
+		</div>
+	</div>	
+	
+
+
+	
+	
+	
+	
+	
+	
+	</div><!-- end of main -->
+
+	<script type="text/javascript" src="javascript/jquery-1.7.2.min.js"></script>
+	<script>
+		$(function() {
+		   var $pre = $('pre');
+		   $pre.each(function(){
+			   $(this).html($(this).html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+		   });
+		});
+	</script>
+</body>
+</html>

@@ -3,6 +3,17 @@
 /* function */
 /* layout-grid*/
 /* =global */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html {
   height: 100%;
 }
@@ -13,45 +24,153 @@ body {
   line-height: 22px;
   font-family: "微软雅黑", "Microsoft YaHei", "宋体", verdana;
 }
-a:link {
-  color: #1c1c1c;
-  text-decoration: none;
-}
-a:visited {
-  color: #1c1c1c;
-  text-decoration: none;
-}
-a:hover {
-  color: #1c1c1c;
-  text-decoration: none;
-}
-a:active {
-  color: #1c1c1c;
-  text-decoration: none;
-}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-weight: bold;
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
 }
-h1 {
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  margin: 20px 0px 10px 0px;
+}
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+  margin: 10px 0px;
+}
+h1,
+.hl {
   font-size: 36px;
 }
-h2 {
+h2,
+.h2 {
   font-size: 24px;
 }
-h3 {
+h3,
+.h3 {
   font-size: 18px;
 }
-h4 {
+h4,
+.h4 {
   font-size: 16px;
 }
-h5 {
+h5,
+.h5 {
   font-size: 14px;
 }
-h6 {
+h6,
+.h6 {
   font-size: 12px;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small {
+  font-size: 65%;
+}
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+  font-size: 75%;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+p {
+  margin: 0 0 10px 0;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+small,
+.small {
+  font-size: 85%;
+}
+b,
+strong {
+  font-weight: bold;
 }

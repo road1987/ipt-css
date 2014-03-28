@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body {
+
+}
+
+#main {
+	width : 960px;
+	margin : 0px auto;
+}
+
+
+.examplebox {
+	border : 1px solid #dddddd;
+	-moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.examplebox .result{
+	padding : 10px;
+}
+
+.examplebox .code{
+	padding : 10px;
+	background: #EEEEEE;
+	border-top : 1px solid #dddddd;	
+}
