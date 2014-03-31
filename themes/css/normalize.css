@@ -80,7 +80,7 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1em 0;
+  margin: 0px;
 }
 dd {
   margin: 0 0 0 40px;
@@ -140,4 +140,8 @@ figure {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
 }
