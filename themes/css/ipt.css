@@ -3,7 +3,18 @@
 /* typography */
 /* function */
 /* layout-grid*/
-/* ==========================================================================
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* normalize.css v1.1.3 | MIT License | git.io/normalize *//* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
 /**
@@ -49,6 +60,22 @@ audio:not([controls]) {
   display: none;
 }
 /* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
    Lists
    ========================================================================== */
 /**
@@ -80,16 +107,6 @@ nav ol {
   list-style-image: none;
 }
 /* ==========================================================================
-   Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* ==========================================================================
    Embedded content
    ========================================================================== */
 /**
@@ -119,22 +136,38 @@ svg:not(:root) {
 figure {
   margin: 0;
 }
-/* =global */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+/* =global and typography */
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
 html {
-  height: 100%;
+  font-size: 100%;
+  /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
 }
 body {
+  margin: 0px;
+  /** Address margins handled incorrectly in IE 6/7.*/
+
   background: #ffffff;
   color: #333333;
   font-size: 14px;

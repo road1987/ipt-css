@@ -3,9 +3,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg : grunt.file.readJSON('package.json'),
         less : {
-        	reset : {
+        	normalize : {
 		       files: {
-		          "themes/css/reset.css": "themes/less/reset.less"
+		          "themes/css/normalize.css": "themes/less/normalize.less"
 		       }        		
         	},
         	

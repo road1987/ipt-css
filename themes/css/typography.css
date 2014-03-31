@@ -2,22 +2,28 @@
 /* typography */
 /* function */
 /* layout-grid*/
-/* =global */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+/* =global and typography */
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
 html {
-  height: 100%;
+  font-size: 100%;
+  /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
 }
 body {
+  margin: 0px;
+  /** Address margins handled incorrectly in IE 6/7.*/
+
   background: #ffffff;
   color: #333333;
   font-size: 14px;
