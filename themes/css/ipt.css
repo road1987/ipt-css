@@ -436,9 +436,7 @@ ol ol {
   padding-right: 5px;
   padding-left: 5px;
   *display: inline;
-  _display: inline;
   *zoom: 1;
-  _zoom: 1;
 }
 dl {
   margin-top: 0;
@@ -467,6 +465,72 @@ a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+/* ========================================================================
+   Component: Table
+ ========================================================================== */
+/*
+ * Block element behavior
+ */
+.table {
+  width: 100%;
+  margin-bottom: 15px;
+}
+/*
+ * Add margin if adjacent element
+ */
+* + .table {
+  margin-top: 15px;
+}
+.table th,
+.table td {
+  padding: 8px 8px;
+  border-bottom: 1px solid #dddddd;
+}
+/*
+ * Set alignment
+ */
+.table th {
+  text-align: left;
+}
+.table td {
+  vertical-align: top;
+}
+.table thead th {
+  vertical-align: bottom;
+}
+/*
+ * Caption and footer
+ */
+.table caption,
+.table tfoot {
+  font-size: 12px;
+  font-style: italic;
+}
+.table caption {
+  text-align: left;
+  color: #999999;
+}
+/* Sub-modifier: `table-middle`
+ ========================================================================== */
+.table-middle,
+.table-middle td {
+  vertical-align: middle !important;
+}
+/* Modifier: `table-striped`
+ ========================================================================== */
+.table-striped tbody tr:nth-of-type(odd) {
+  background: #fafafa;
+}
+/* Modifier: `table-condensed`
+ ========================================================================== */
+.table-condensed td {
+  padding: 4px 8px;
+}
+/* Modifier: `table-hover`
+ ========================================================================== */
+.table-hover > tbody > tr:hover {
+  background: #f0f0f0;
 }
 /*function.css*/
 .fn-clear {

@@ -20,7 +20,13 @@ module.exports = function(grunt) {
  		          "themes/css/typography.css": "themes/less/typography.less"
  		       }          		
         	},
-        	
+
+        	table : {
+  		       files: {
+  		          "themes/css/table.css": "themes/less/table.less"
+  		       }          		
+         	},
+         	
         	form : {
   		       files: {
   		          "themes/css/form.css": "themes/less/form.less"
