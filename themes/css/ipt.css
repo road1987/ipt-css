@@ -529,8 +529,12 @@ a:focus {
 }
 /* Modifier: `table-hover`
  ========================================================================== */
-.table-hover > tbody > tr:hover {
+.table-hover tbody tr:hover {
   background: #f0f0f0;
+}
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dddddd !important;
 }
 /*function.css*/
 .fn-clear {
