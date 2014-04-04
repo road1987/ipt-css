@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<title>ipt-css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="../themes/css/ipt.css" rel="stylesheet" type="text/css"/>
+<link href="themes/css/main.css" rel="stylesheet" type="text/css"/>
+<style>
+/* Forms
+ ========================================================================== */
+/*
+ * Vertical alignment
+ * Exclude `radio` and `checkbox` elements because the default `baseline` value aligns better with text
+ */
+button,
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+  vertical-align: middle;
+}
+</style>
+</head>
+
+<body>
+	<div id="main">
+		<form class="grid12">
+			<input type="text" name="uname" placeholder="username"/>
+			<input type="password" name="pwd" placeholder="password"/>
+			<label><input type="radio"/>radio</label>
+			<label><input type="checkbox"/>checkbox</label>
+			<select>
+            	<option>option 0</option>
+            	<option>option 1</option>
+        	</select>
+        	<br/>
+			<input type="submit" value="submit"/>
+			<input type="reset" value="reset"/>
+			<input type="button" disabled value="disabled"/>
+			<input type="color" name="favcolor"/>
+		</form>
+	
+	</div><!-- end of main -->
+
+	<script type="text/javascript" src="javascript/jquery-1.7.2.min.js"></script>
+	<script>
+		$(function() {
+		   var $pre = $('pre');
+		   $pre.each(function(){
+			   $(this).html($(this).html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+		   });
+		});
+	</script>
+</body>
+</html>
