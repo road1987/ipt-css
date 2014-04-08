@@ -33,6 +33,12 @@ module.exports = function(grunt) {
   		       }          		
          	},
           	
+         	panel : {
+         		files : {
+         			"themes/css/widget/panel.css":"themes/less/widget/panel.less"
+         		}
+         	},
+         	
          	grid : {
    		       files: {
    		          "themes/css/grid.css": "themes/less/grid.less"
