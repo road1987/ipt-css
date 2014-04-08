@@ -1,0 +1,151 @@
+@import "../config.less";
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: @panel-border-radius;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  1border-top-left-radius: 3px;
+  1border-top-right-radius: 3px;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+.panel-title > a {
+  color: inherit;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  1border-bottom-right-radius: 3px;
+  1border-bottom-left-radius: 3px;
+}
+
+.panel-default {
+  border-color: @panel-state-default-bordercolor;
+}
+
+.panel-default > .panel-heading {
+  color: @panel-state-default-heading-color;
+  background-color: @panel-state-default-heading-bgcolor;
+  border-color: @panel-state-default-bordercolor;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: @panel-state-default-bordercolor;
+}
+
+.panel-default > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: @panel-state-default-bordercolor;
+}
+
+.panel-primary {
+  border-color:  @panel-state-primary-bordercolor;
+}
+
+.panel-primary > .panel-heading {
+  color: @panel-state-primary-heading-color;
+  background-color: @panel-state-primary-heading-bgcolor;
+  border-color: @panel-state-primary-bordercolor;
+}
+
+.panel-primary > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: @panel-state-primary-bordercolor;
+}
+
+.panel-primary > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: @panel-state-primary-bordercolor;
+}
+
+.panel-success {
+  border-color: @panel-state-success-bordercolor;
+}
+
+.panel-success > .panel-heading {
+  color: @panel-state-success-heading-color;
+  background-color: @panel-state-success-heading-bgcolor;
+  border-color: @panel-state-success-bordercolor;
+}
+
+.panel-success > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: @panel-state-success-bordercolor;
+}
+
+.panel-success > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: @panel-state-success-bordercolor;
+}
+
+.panel-info {
+  border-color: @panel-state-info-bordercolor;
+}
+
+.panel-info > .panel-heading {
+  color: @panel-state-info-heading-color;
+  background-color:  @panel-state-info-heading-bgcolor;
+  border-color: @panel-state-info-bordercolor;
+}
+
+.panel-info > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: @panel-state-info-bordercolor;
+}
+
+.panel-info > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: @panel-state-info-bordercolor;
+}
+
+.panel-warning {
+  border-color: @panel-state-warning-bordercolor;
+}
+
+.panel-warning > .panel-heading {
+  color:  @panel-state-warning-heading-color;
+  background-color: @panel-state-warning-heading-bgcolor;
+  border-color: @panel-state-warning-bordercolor;
+}
+
+.panel-warning > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: @panel-state-warning-bordercolor;
+}
+
+.panel-warning > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: @panel-state-warning-bordercolor;
+}
+
+.panel-danger {
+  border-color: @panel-state-danger-bordercolor;
+}
+
+.panel-danger > .panel-heading {
+  color: @panel-state-danger-heading-color;
+  background-color: @panel-state-danger-heading-bgcolor;
+  border-color: @panel-state-danger-bordercolor;
+}
+
+.panel-danger > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: @panel-state-danger-bordercolor;
+}
+
+.panel-danger > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: @panel-state-danger-bordercolor;
+}
