@@ -819,7 +819,6 @@ textarea {
  */
 select,
 textarea,
-
 input[type="text"],
 input[type="password"],
 input[type="datetime"],
@@ -837,7 +836,7 @@ input[type="color"] {
   /* 1 */
 
   height: 30px;
-  line-height : 30px;
+  line-height: 30px;
   /* 2 */
 
   max-width: 100%;
@@ -845,11 +844,11 @@ input[type="color"] {
 
   padding: 4px 6px;
   /* 4 */
-
   border: 1px solid #cccccc;
   background: #ffffff;
   vertical-align: middle;
   color: #555555;
+  display: inline-block;
   -moz-transition: all linear 0.2s;
   -webkit-transition: all linear 0.2s;
   -o-transition: all linear 0.2s;
@@ -860,10 +859,11 @@ input[type="color"] {
   border-radius: 4px 4px 4px 4px;
   /* Focus state */
 
+  /* Disabled state */
+
 }
 select:focus,
 textarea:focus,
-input:not([type]):focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="datetime"]:focus,
@@ -880,15 +880,10 @@ input[type="tel"]:focus,
 input[type="color"]:focus {
   border-color: #66AFE9;
   outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 2px rgba(102, 175, 233, 0.6);
 }
-/* Disabled state */
 select:disabled,
 textarea:disabled,
-input:not([type]):disabled,
 input[type="text"]:disabled,
 input[type="password"]:disabled,
 input[type="datetime"]:disabled,
@@ -969,6 +964,9 @@ legend:after {
   content: "";
   display: block;
   border-bottom: 1px solid #dddddd;
+}
+.form-row {
+  margin-bottom: 15px;
 }
 .panel {
   margin-bottom: 20px;

@@ -171,7 +171,6 @@ textarea {
  */
  select,
  textarea,
- input:not([type]),
  input[type="text"],
  input[type="password"],
  input[type="datetime"],
@@ -188,6 +187,7 @@ textarea {
  input[type="color"] {
   /* 1 */
   height: 30px;
+  line-height: 30px;
   /* 2 */
   max-width: 100%;
   /* 3 */
@@ -197,6 +197,7 @@ textarea {
   background: #ffffff;
   vertical-align: middle;
   color: #555555;
+  display : inline-block;
   .transition(all linear 0.2s);
   .border-radius(@form-input-border,@form-input-border,@form-input-border,@form-input-border);
   
@@ -204,34 +205,17 @@ textarea {
   &:focus {
     border-color: #66AFE9;
     outline: 0;
-    outline: thin dotted \9; /* IE6-9 */
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 2px rgba(102, 175, 233, 0.6);
+  }
+  
+  /* Disabled state */
+  &:disabled {
+	  border-color: #dddddd;
+	  background-color: #f5f5f5;
+	  color: #999999;
   }
 }
 
-
-  /* Disabled state */
- select:disabled,
- textarea:disabled,
- input:not([type]):disabled,
- input[type="text"]:disabled,
- input[type="password"]:disabled,
- input[type="datetime"]:disabled,
- input[type="datetime-local"]:disabled,
- input[type="date"]:disabled,
- input[type="month"]:disabled,
- input[type="time"]:disabled,
- input[type="week"]:disabled,
- input[type="number"]:disabled,
- input[type="email"]:disabled,
- input[type="url"]:disabled,
- input[type="search"]:disabled,
- input[type="tel"]:disabled,
- input[type="color"]:disabled {
-  border-color: #dddddd;
-  background-color: #f5f5f5;
-  color: #999999;
-}
 /*
  * Placeholder
  * Higher specificity (!important) needed to override color in IE
@@ -299,5 +283,9 @@ textarea:disabled::-webkit-input-placeholder {
   content: "";
   display: block;
   border-bottom: 1px solid #dddddd;
+}
+
+.form-row{
+	margin-bottom : 15px;
 }
 

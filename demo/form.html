@@ -8,32 +8,39 @@
 <link href="../themes/css/ipt.css" rel="stylesheet" type="text/css"/>
 <link href="themes/css/main.css" rel="stylesheet" type="text/css"/>
 <style>
-/* Forms
- ========================================================================== */
-/*
- * Vertical alignment
- * Exclude `radio` and `checkbox` elements because the default `baseline` value aligns better with text
- */
-button,
-input:not([type="radio"]):not([type="checkbox"]),
-select {
-  vertical-align: middle;
-}
+
 </style>
 </head>
 
 <body>
 	<div id="main">
 		<form class="grid12">
-			<input type="text" name="uname" placeholder="username"/>
-			<input type="password" name="pwd" placeholder="password"/>
-			<label><input type="radio"/>radio</label>
-			<label><input type="checkbox"/>checkbox</label>
-			<select>
-            	<option>option 0</option>
-            	<option>option 1</option>
-        	</select>
-        	<br/>
+			<div class="row-fluid form-row">
+				<label class="span1">username:</label>
+				<input class="span3" type="text"/>
+			</div>
+			<div class="row-fluid form-row fn-clear">
+				<label class="span1">password:</label>
+				<input class="span3" type="text"/>
+			</div>
+			<div class="row-fluid form-row fn-clear">
+				<label class="offset1"><input name="role" type="radio"/>student</label>
+				<label class="offset1"><input name="role" type="radio"/>teacher</label>
+			</div>
+			<div class="row-fluid form-row fn-clear">
+				<label class="offset1"><input type="checkbox"/> Remember me </label>
+			</div>
+			<div class="row-fluid form-row fn-clear">
+				<select class="offset1 span3">
+	            	<option>option 0</option>
+	            	<option>option 1</option>
+	        	</select>
+			</div>
+			<div class="row-fluid form-row fn-clear " >
+				<input type="submit" class="offset1" value="submit"/>
+				<input type="reset" class="offset1" value="reset"/>
+			</div>
+			
 			<input type="submit" value="submit"/>
 			<input type="reset" value="reset"/>
 			<input type="button" disabled value="disabled"/>
