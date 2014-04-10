@@ -32,7 +32,14 @@ module.exports = function(grunt) {
   		          "themes/css/form.css": "themes/less/form.less"
   		       }          		
          	},
-          	
+
+         	
+        	button : {
+  		       files: {
+  		          "themes/css/widget/button.css": "themes/less/widget/button.less"
+  		       }        		
+         	},
+         	
          	panel : {
          		files : {
          			"themes/css/widget/panel.css":"themes/less/widget/panel.less"
