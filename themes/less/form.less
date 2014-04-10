@@ -161,6 +161,10 @@ textarea {
 /* ==========================================================================
    Forms : add by hongchun.li
    ========================================================================== */
+.form-row{
+	margin-bottom : 15px;
+}
+
 /*
  * Controls
  * Except for `range`, `radio`, `checkbox`, `file`, `submit`, `reset`, `button` and `image`
@@ -186,8 +190,8 @@ textarea {
  input[type="tel"],
  input[type="color"] {
   /* 1 */
-  height: 30px;
-  line-height: 30px;
+  height: 34px;
+  line-height: 26px;
   /* 2 */
   max-width: 100%;
   /* 3 */
@@ -265,6 +269,35 @@ textarea:disabled::-webkit-input-placeholder {
 }
 
 /*
+* field height size set
+*/
+input.input-sm , select.input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+textarea.input-sm,
+select[multiple].input-sm {
+  height: auto;
+}
+
+input.input-lg , select.input-lg{
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 26px;
+  border-radius: 6px;
+}
+
+textarea.input-lg,
+select[multiple].input-lg {
+  height: auto;
+}
+
+/*
  * Legend style
  * 1. `margin-bottom` is not working in Safari and Opera.
  *    Using `padding` and :after instead to create the border
@@ -285,7 +318,7 @@ textarea:disabled::-webkit-input-placeholder {
   border-bottom: 1px solid #dddddd;
 }
 
-.form-row{
-	margin-bottom : 15px;
+label{
+	display : inline-block;
+	padding-top : 6px;
 }
-
