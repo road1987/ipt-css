@@ -133,6 +133,9 @@
 .panel-sm > .panel-heading {
   padding: 6px 9px;
 }
+.panel-sm > .panel-heading > .panel-title {
+  font-size: 16px;
+}
 .panel-sm > .panel-body {
   padding: 9px;
 }
@@ -141,6 +144,9 @@
 }
 .panel-lg > .panel-heading {
   padding: 15px 20px;
+}
+.panel-lg > .panel-heading > .panel-title {
+  font-size: 16px;
 }
 .panel-lg > .panel-body {
   padding: 20px;
