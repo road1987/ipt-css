@@ -40,6 +40,12 @@ module.exports = function(grunt) {
   		       }        		
          	},
          	
+         	box : {
+         		files : {
+         			"themes/css/widget/box.css" : "themes/less/widget/box.less"
+         		}
+         	},
+         	
          	panel : {
          		files : {
          			"themes/css/widget/panel.css":"themes/less/widget/panel.less"
