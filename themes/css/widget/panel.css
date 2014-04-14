@@ -127,3 +127,24 @@
 .panel-danger > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #ebccd1;
 }
+/*
+*	panel-sizes
+*/
+.panel-sm > .panel-heading {
+  padding: 6px 9px;
+}
+.panel-sm > .panel-body {
+  padding: 9px;
+}
+.panel-sm > .panel-footer {
+  padding: 6px 9px;
+}
+.panel-lg > .panel-heading {
+  padding: 15px 20px;
+}
+.panel-lg > .panel-body {
+  padding: 20px;
+}
+.panel-lg > .panel-footer {
+  padding: 15px 20px;
+}
