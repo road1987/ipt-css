@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<title>ipt-css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="../themes/css/ipt.css" rel="stylesheet" type="text/css"/>
+<link href="themes/css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<div id="main">
+		<h1 class="align-center"> Helper Classes </h1>
+		<h2><a href="#">border</a></h2>
+		<h3>normal & border-rounded & border-circle</h3>
+		<img class="" src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		<img class="border-rounded " src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		<img class="border-circle " src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		
+		<h2><a href="#">padding</a></h2>
+		<h3>no-padding & padding-sm & padding & padding-lg <small>you can use *-top, *-right , *-bottom , *-left specially for your application!</small></h3>
+		<div style="border:1px solid #DDDDDD;">no padding</div><br/>
+		<div class="padding-sm" style="border:1px solid #DDDDDD;">padding small - with class padding-sm</div><br/>
+		<div class="padding"  style="border:1px solid #DDDDDD;">padding - with class padding</div><br/>
+		<div class="padding-lg"  style="border:1px solid #DDDDDD;">padding large - with class padding-lg</div><br/>
+		
+		
+		<h2><a href="#">border & padding</a></h2>
+		<img class="border-rounded" src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		<img class="border-rounded padding-sm" src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		<img class="border-rounded padding" src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		<img class="border-rounded padding-lg" src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		<br/>
+		<img class="border-circle " src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		<img class="border-circle padding-sm" src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		<img class="border-circle padding" src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		<img class="border-circle padding-lg" src="themes/images/header.jpg" style="width:140px; height:140px; border:1px solid #DDDDDD;"/>
+		
+		<h2><a href="#">margin</a></h2>
+		<div style="border:1px solid #DDDDDD;height:200px;" class="align-center;">
+			<div class="float-left" style="border:1px solid #DDDDDD;width:140px;height:140px;display:inline-block;">
+				no-margin
+			</div>
+			<div class="margin-sm float-left" style="border:1px solid #DDDDDD;width:140px;height:140px;display:inline-block;">
+				margin-small
+			</div>
+			<div class="margin  float-left" style="border:1px solid #DDDDDD;width:140px;height:140px;display:inline-block;">
+				margin
+			</div>
+			<div class="margin-lg  float-left" style="border:1px solid #DDDDDD;width:140px;height:140px;display:inline-block;">
+				margin-large
+			</div>
+		</div>
+		
+		<h2><a href="#">Context background</a></h2>		
+		<p class="bg-primary">background primary (class bg-primary) </p>
+		<p class="bg-success">background success (class bg-success) </p>
+		<p class="bg-info">background info (class bg-info) </p>
+		<p class="bg-warning">background warning (class bg-warning) </p>
+		<p class="bg-danger">background danger (class bg-danger) </p>
+
+		<h2><a href="#">Context text color</a></h2>		
+		<p class="text-muted">text muted (class text-muted) </p>
+		<p class="text-success">text success (class text-success) </p>
+		<p class="text-info">text info (class text-info) </p>
+		<p class="text-warning">text warning (class text-warning) </p>
+		<p class="text-error">text error (class text-error) </p>
+
+		<h2><a href="#">text size</a></h2>		
+		<p class="text-sm">text small (class text-sm) </p>
+		<p>text default</p>
+		<p class="text-lg">text info (class text-lg) </p>
+						
+	</div><!-- end of main -->
+
+	<script type="text/javascript" src="javascript/jquery-1.7.2.min.js"></script>
+	<script>
+		$(function() {
+		   var $pre = $('pre');
+		   $pre.each(function(){
+			   $(this).html($(this).html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+		   });
+		});
+	</script>
+</body>
+</html>

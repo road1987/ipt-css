@@ -9,9 +9,9 @@ module.exports = function(grunt) {
 		       }        		
         	},
         	
-        	function_ : {
+        	helper : {
    		       files: {
-   		          "themes/css/function.css": "themes/less/function.less"
+   		          "themes/css/helper.css": "themes/less/helper.less"
    		       }          		
           	},
         	
