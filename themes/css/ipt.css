@@ -479,13 +479,13 @@ a:focus {
  */
 .table {
   width: 100%;
-  margin-bottom: 15px;
+  1margin-bottom: 15px;
 }
 /*
  * Add margin if adjacent element
  */
 * + .table {
-  margin-top: 15px;
+  1margin-top: 15px;
 }
 .table th,
 .table td {
