@@ -1,0 +1,73 @@
+/*layout.css*/
+
+
+ul.nav {
+	display : block;
+	list-style-type : none;
+	padding : 0px;
+	margin : 0px;
+}
+
+ul.nav > li.nav-item{
+	min-width : 100px;
+	height : 60px;
+	line-height : 60px;
+	display : inline-block;
+	position: relative;
+	padding : 0px 10px;
+	cursor : pointer;
+	background : #023964;
+	color : white;
+	text-align : center;
+}
+
+ul.nav-h > li.nav-item{
+	display : inline-block;
+}
+
+ul.nav-v > li.nav-item{
+	display : block;
+}
+
+ul.nav > li.nav-item:hover{
+	background : #F3B608;
+}
+
+ul.nav > li.nav-item >a{
+
+}
+
+ul.nav > li.nav-item >.popover{
+  position: absolute;
+  z-index: 999;
+  color : #000000;
+  background : #023964;
+  visibility: hidden;
+  color : white;
+}
+
+ul.nav > li.nav-item >.popover-right{
+  top : 0px;
+  left : 100%;
+}
+
+ul.nav > li.nav-item >.popover-bottom{
+  top : 100%;
+  left : 0px;
+}
+
+ul.nav > li.nav-item:hover > .popover{
+	visibility : visible;
+}
+/*
+ul.nav li.nav-item .popover .triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #F3B608;
+  top: -8px;
+  left: 50%;
+  margin-left: -8px;
+}*/
