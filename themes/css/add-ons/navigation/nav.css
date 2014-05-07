@@ -1,24 +1,30 @@
-/*layout.css*/
-
-
+/*navigation.css*/
 ul.nav {
 	display : block;
 	list-style-type : none;
 	padding : 0px;
 	margin : 0px;
+	background-color : #F8F8F8;
+	border : 1px solid #CCCCCC;
+	text-align : left;
 }
 
 ul.nav > li.nav-item{
 	min-width : 100px;
 	height : 60px;
 	line-height : 60px;
+	color : #333333;
+	text-align : center;
 	display : inline-block;
 	position: relative;
-	padding : 0px 10px;
 	cursor : pointer;
-	background : #023964;
-	color : white;
-	text-align : center;
+	zoom:1;
+	/*effect*/		
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	-ms-transition: background 0.2s;
+	-o-transition: background 0.2s;
+	transition: background 0.2s;
 }
 
 ul.nav-h > li.nav-item{
@@ -30,44 +36,69 @@ ul.nav-v > li.nav-item{
 }
 
 ul.nav > li.nav-item:hover{
-	background : #F3B608;
+	background : #EBEBEB;
+}
+
+ul.nav > li.nav-item:hover ul.nav{
+	background : #FFFFFF;	
+}
+
+ul.nav > li.nav-item-active{
+	background : #DEDEDE;
 }
 
 ul.nav > li.nav-item >a{
-
+	display:block;
+	text-decoration:none;
+	color : #333333;
 }
 
 ul.nav > li.nav-item >.popover{
   position: absolute;
   z-index: 999;
-  color : #000000;
-  background : #023964;
   visibility: hidden;
-  color : white;
 }
 
-ul.nav > li.nav-item >.popover-right{
+ul.nav > li.nav-item >.popover-tl{
+  left : 0px;
+  bottom : 100%;
+}
+
+ul.nav > li.nav-item >.popover-tr{
+  right : 0px;
+  bottom : 100%;
+}
+
+ul.nav > li.nav-item >.popover-rt{
   top : 0px;
   left : 100%;
 }
 
-ul.nav > li.nav-item >.popover-bottom{
+ul.nav > li.nav-item >.popover-rb{
+  bottom : 0px;
+  left : 100%;
+}
+
+ul.nav > li.nav-item >.popover-bl{
   top : 100%;
   left : 0px;
+}
+
+ul.nav > li.nav-item >.popover-br{
+  top : 100%;
+  left : 0px;
+}
+
+ul.nav > li.nav-item >.popover-lt{
+  top : 0px;
+  right : 100%;
+}
+
+ul.nav > li.nav-item >.popover-lb{
+  top : 0px;
+  right : 100%;
 }
 
 ul.nav > li.nav-item:hover > .popover{
 	visibility : visible;
 }
-/*
-ul.nav li.nav-item .popover .triangle {
-  width: 0;
-  height: 0;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #F3B608;
-  top: -8px;
-  left: 50%;
-  margin-left: -8px;
-}*/
