@@ -27,12 +27,25 @@ ul.nav > li.nav-item{
 	transition: background 0.2s;
 }
 
-ul.nav-h > li.nav-item{
+ul.nav-inline > li.nav-item{
 	display : inline-block;
 }
 
-ul.nav-v > li.nav-item{
+ul.nav-block > li.nav-item{
 	display : block;
+}
+
+ul.nav-inline > li.nav-divider{
+   	border-right: 1px solid #CCCCCC;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    z-index : 1;
+}
+
+ul.nav-block > li.nav-divider{
+	border-bottom : 1px solid #CCCCCC;
 }
 
 ul.nav > li.nav-item:hover{
@@ -53,52 +66,54 @@ ul.nav > li.nav-item >a{
 	color : #333333;
 }
 
-ul.nav > li.nav-item >.popover{
+ul.nav > li.nav-item:hover > .popover{
+	visibility : visible;
+}
+
+.popover{
+  min-width : 180px;
   position: absolute;
   z-index: 999;
   visibility: hidden;
 }
 
-ul.nav > li.nav-item >.popover-tl{
+.popover-top-left{
   left : 0px;
   bottom : 100%;
 }
 
-ul.nav > li.nav-item >.popover-tr{
+.popover-top-right{
   right : 0px;
   bottom : 100%;
 }
 
-ul.nav > li.nav-item >.popover-rt{
+.popover-right-top{
   top : 0px;
   left : 100%;
 }
 
-ul.nav > li.nav-item >.popover-rb{
+.popover-right-bottom{
   bottom : 0px;
   left : 100%;
 }
 
-ul.nav > li.nav-item >.popover-bl{
+.popover-bottom-left{
   top : 100%;
   left : 0px;
 }
 
-ul.nav > li.nav-item >.popover-br{
+.popover-bottom-right{
   top : 100%;
-  left : 0px;
+  right : 0px;
 }
 
-ul.nav > li.nav-item >.popover-lt{
+.popover-left-top{
   top : 0px;
   right : 100%;
 }
 
-ul.nav > li.nav-item >.popover-lb{
+.popover-left-bottom{
   top : 0px;
   right : 100%;
 }
 
-ul.nav > li.nav-item:hover > .popover{
-	visibility : visible;
-}
