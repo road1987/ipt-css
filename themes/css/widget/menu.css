@@ -1,0 +1,101 @@
+/*navigation.css*/
+ul.menu {
+	list-style-type : none;
+	padding : 0px;
+	margin : 0px;
+	display : inline-block;
+	border : 1px solid #CCCCCC;
+	text-align : left;
+	min-width : 180px;
+}
+
+ul.menu > li.menu-item{
+	height : 38px;
+	line-height : 38px;
+	color : #333333;
+	display : block;
+	padding-left : 10px;
+	position: relative;
+	cursor : pointer;
+	zoom:1;
+	/*effect*/		
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	-ms-transition: background 0.2s;
+	-o-transition: background 0.2s;
+	transition: background 0.2s;
+}
+
+ul.menu > li.menu-divider{
+	border-bottom : 1px solid #CCCCCC;
+}
+
+ul.menu > li.menu-item:hover{
+	background : #EBEBEB;
+}
+
+ul.menu > li.menu-item:hover ul.menu{
+	background : #FFFFFF;	
+}
+
+ul.menu > li.menu-item-active{
+	background : #DEDEDE;
+}
+
+ul.menu > li.menu-item >a{
+	display:block;
+	text-decoration:none;
+	color : #333333;
+}
+
+ul.menu > li.menu-item:hover > .popover{
+	visibility : visible;
+}
+
+.popover{
+  min-width : 180px;
+  position: absolute;
+  z-index: 999;
+  visibility: hidden;
+}
+
+.popover-top-left{
+  left : 0px;
+  bottom : 100%;
+}
+
+.popover-top-right{
+  right : 0px;
+  bottom : 100%;
+}
+
+.popover-right-top{
+  top : 0px;
+  left : 100%;
+}
+
+.popover-right-bottom{
+  bottom : 0px;
+  left : 100%;
+}
+
+.popover-bottom-left{
+  top : 100%;
+  left : 0px;
+}
+
+.popover-bottom-right{
+  top : 100%;
+  right : 0px;
+}
+
+.popover-left-top{
+  top : 0px;
+  right : 100%;
+}
+
+.popover-left-bottom{
+  top : 0px;
+  right : 100%;
+}
+
