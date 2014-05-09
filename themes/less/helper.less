@@ -4,8 +4,14 @@
 /*
 * =float
 */
-.clear {
-	clear: both;
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
 }
 
 .float {

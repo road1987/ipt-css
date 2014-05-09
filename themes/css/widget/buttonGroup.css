@@ -1,0 +1,46 @@
+/*
+* button group
+*/
+ul.btn-group:before,
+.btn-group:after {
+  display: table;
+  content: " ";
+}
+
+ul.btn-group:after {
+  clear: both;
+}
+
+ul.btn-group {
+	list-style-type : none;
+	padding : 0px;
+	margin : 0px;
+	display : inline-block;
+}
+
+ul.btn-group li {
+	float : left;
+	display : inline-block;
+	margin-left : -1px;
+}
+
+ul.btn-group .btn{
+  -moz-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+ul.btn-group li:first-child .btn{
+  -moz-border-radius: 4px 0px 0px 4px;
+  -khtml-border-radius: 4px 0px 0px 4px;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+ul.btn-group li:last-child .btn{
+  -moz-border-radius: 0px 4px 4px 0px;
+  -khtml-border-radius: 0px 4px 4px 0px;
+  -webkit-border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 4px 4px 0px;
+}
