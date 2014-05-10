@@ -44,3 +44,23 @@ ul.btn-group li:last-child .btn{
   -webkit-border-radius: 0px 4px 4px 0px;
   border-radius: 0px 4px 4px 0px;
 }
+
+ul.btn-group-lg .btn{
+	font-size: 18px;
+    line-height: 1.33;
+    padding: 10px 16px;
+}
+
+ul.btn-group-sm .btn{
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+ul.btn-group-xs .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
