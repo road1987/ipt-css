@@ -7,9 +7,11 @@ ul.nav {
 	background-color : #F8F8F8;
 	border : 1px solid #CCCCCC;
 	text-align : left;
+	font-size : 0px; /*fix the inline-block gap bug*/
 }
 
 ul.nav > li.nav-item{
+	font-size : 14px;
 	min-width : 100px;
 	height : 60px;
 	line-height : 60px;
@@ -40,8 +42,11 @@ ul.nav-inline > li.nav-divider{
     display: inline-block;
     height: 60px;
     line-height: 60px;
-    position: absolute;
+    position: relative;
     z-index : 1;
+    padding : 0px;
+    margin:0px;
+    display : table-cell;
 }
 
 ul.nav-block > li.nav-divider{
