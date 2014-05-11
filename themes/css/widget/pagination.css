@@ -1,0 +1,59 @@
+/*navigation.css*/
+ul.pagination {
+	list-style-type : none;
+	padding : 0px;
+	margin : 0px;
+	display : inline-block;
+	text-align : left;
+	font-size : 0px;
+}
+
+ul.pagination > li{
+	display : inline-block;
+	text-align : center;
+	line-height : 1em;
+	font-size : 14px;
+	margin-left: 4px;
+}
+
+ul.pagination > li > a{
+	display : block;
+	cursor : pointer;
+	padding : 6px 12px;
+	text-decoration : none;
+	border : 1px solid #dddddd;
+	-moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+ul.pagination > li > a:hover{
+	background : #eeeeee;
+}
+
+ul.pagination > li.active > a{
+	background : #428bca;
+	cursor : default;
+	color : #ffffff;
+}
+
+ul.pagination > li.disabled >a{
+	color : #DEDEDE;
+	cursor : default;
+}
+
+ul.pagination > li.disabled > a:hover{
+	background : none;
+}
+
+ul.pagination-lg > li > a{
+	padding: 10px 16px;
+}
+
+ul.pagination-sm > li > a{
+	font-size : 12px;
+	padding: 5px 10px;
+}
+
