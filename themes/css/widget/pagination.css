@@ -37,6 +37,7 @@ ul.pagination > li.active > a{
 	background : #428bca;
 	cursor : default;
 	color : #ffffff;
+	border : 1px solid #357EBD;
 }
 
 ul.pagination > li.disabled >a{
