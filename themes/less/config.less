@@ -9,7 +9,6 @@
     border-radius:  @radius-tl @radius-tr   @radius-bl @radius-br;
 };
 
-
 .gradient-line-top-bottom(@start-color : #EEEEEE , @end-color : #AAAAAA ){
 	background: -moz-linear-gradient(top, @start-color 0%, @end-color 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start-color), color-stop(100%,@end-color)); /* Chrome,Safari4+ */
@@ -75,6 +74,11 @@
 @text-size-large : 18px;
 @text-size-xlarge : 24px;
 
+/* responsive-utility*/
+@screen-sm-max : 767px;
+@screen-md-min : 768px;
+@screen-md-max : 959px;
+@screen-lg-min : 960px;
 
 
 /* layout-grid*/
