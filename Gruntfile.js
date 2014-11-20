@@ -14,7 +14,13 @@ module.exports = function(grunt) {
    		          "themes/css/helper.css": "themes/less/helper.less"
    		       }          		
           	},
-        	
+
+        	responsiveUtility : {
+    		       files: {
+    		          "themes/css/responsive-utility.css": "themes/less/responsive-utility.less"
+    		       }          		
+           	},
+           	
         	typography : {
  		       files: {
  		          "themes/css/typography.css": "themes/less/typography.less"

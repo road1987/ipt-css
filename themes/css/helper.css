@@ -1,6 +1,7 @@
 /* function set */
 /* typography */
 /* function */
+/* responsive-utility*/
 /* layout-grid*/
 /* form */
 /**
@@ -244,4 +245,28 @@
 }
 .text-bold {
   font-weight: bold;
+}
+/*
+* =display
+*/
+.hidden {
+  display: none !important;
+}
+.show-block {
+  display: block !important;
+}
+.show-inline {
+  display: inline !important;
+}
+.show-inline-block {
+  display: inline-block !important;
+}
+/*
+* =visibility
+*/
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden !important;
 }

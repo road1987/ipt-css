@@ -1,0 +1,112 @@
+@import "config.less";
+
+/*reponsive-util.css*/
+/*
+* =visible
+*/
+/* Phone landscape and smaller */
+@media (max-width: @screen-sm-max) {
+	.show-sm {
+		&-block{
+			display : block !important;
+		}
+		&-inline{
+			display : inline !important;
+		}
+		&-inline-block{
+			display : inline-block !important;
+		}
+	}
+}
+
+/* Only tablets portrait */
+@media (min-width: @screen-md-min ) and (max-width: @screen-md-max) {
+	.show-md {
+		&-block{
+			display : block !important;
+		}
+		&-inline{
+			display : inline !important;
+		}
+		&-inline-block{
+			display : inline-block !important;
+		}
+	}
+}
+
+/* Desktop and bigger */
+@media (min-width: @screen-lg-min) {
+	.show-lg {
+		&-block{
+			display : block !important;
+		}
+		&-inline{
+			display : inline !important;
+		}
+		&-inline-block{
+			display : inline-block !important;
+		}
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	.hidden-sm{
+		&-block{
+			display : none !important;
+		}
+		&-inline{
+			display : none !important;
+		}
+		&-inline-block{
+			display : none !important;
+		}
+	}
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	.hidden-md{
+		&-block{
+			display : none !important;
+		}
+		&-inline{
+			display : none !important;
+		}
+		&-inline-block{
+			display : none !important;
+		}
+	}
+}
+
+@media (min-width: @screen-lg-min) {
+	.hidden-lg{
+		&-block{
+			display : none !important;
+		}
+		&-inline{
+			display : none !important;
+		}
+		&-inline-block{
+			display : none !important;
+		}
+	}
+}
+
+/*
+* =print
+*/
+@media print {
+	.show-print {
+		&-block {
+			display : block !important;
+		}
+		&-inline {
+			display : inline !important;
+		}
+		&-inline-block {
+			display : inline-block !important;
+		}
+	}
+	.hidden-print {
+		display : none;
+	}
+}
