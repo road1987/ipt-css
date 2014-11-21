@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<title>ipt-css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="../themes/css/ipt.css" rel="stylesheet" type="text/css"/>
+<link href="themes/css/main.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+	.is-show{
+		background : #dff0d8;
+		color : #468847;
+	}
+	.element {
+		background : green;
+		display: none;
+	}
+</style>
+</head>
+
+<body>
+	<div id="main">
+		<h1 class="align-center"> Responsive Utility </h1>
+			<h2><a href="#">show and hidden</a></h2>
+			<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Extra small devices <br/>Phones (&lt;768px)</th>
+							<th>Medium devices <br/> Desktops (768px <=  size  < 960px)</th>
+							<th>Large devices  <br/> Desktops (≥960px)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>.show-sm-*</td><td class="is-show">show</td><td>hidden</td><td>hidden</td>
+						</tr>		
+						<tr>
+							<td>.show-md-*</td><td>hidden</td><td class="is-show">show</td><td>hidden</td>
+						</tr>	
+						<tr>
+							<td>.show-lg-*</td><td>hidden</td><td>hidden</td><td class="is-show">show</td>
+						</tr>	
+						<tr>
+							<td>.hidden-sm-*</td><td>hidden</td><td class="is-show">show</td><td class="is-show">show</td>
+						</tr>		
+						<tr>
+							<td>.hidden-md-*</td><td class="is-show">show</td><td>hidden</td><td class="is-show">show</td>
+						</tr>	
+						<tr>
+							<td>.hidden-lg-*</td><td class="is-show">show</td><td class="is-show">show</td><td>hidden</td>
+						</tr>					
+					</tbody>
+			</table>
+			<div class="box bg-warning text-error">* = block/inline/inline-block</div>
+			
+			<h2><a href="#">print</a></h2>
+			<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>classes</th>
+							<th>Browser</th>
+							<th>print</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>show-print-inline<br/>show-print-block<br/>show-print-inline-block</td><td >hidden</td><td class="is-show">show</td>
+						</tr>
+						<tr>
+							<td>hidden-print<br/></td><td class="is-show">show</td><td>hidden</td>
+						</tr>						
+					</tbody>
+			</table>
+			
+			<h2><a href="#">test</a></h2>
+			<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>show on small</th>
+							<th>show on medium</th>
+							<th>show on large</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><div class="box show-sm-block is-show"></div></td>
+							<td><div class="box show-md-block is-show"></div></td>
+							<td><div class="box show-lg-block is-show"></div></td>
+						</tr>
+					</tbody>
+			</table>
+	</div><!-- end of main -->
+</body>
+</html>
