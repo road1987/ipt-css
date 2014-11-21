@@ -25,6 +25,17 @@
   width: device-width;
   zoom: 1;
 }
+.show-sm-block,
+.show-md-block,
+.show-lg-block,
+.show-sm-inline,
+.show-md-inline,
+.show-lg-inline,
+.show-sm-inline-block,
+.show-md-inline-block,
+.show-lg-inline-block {
+  display: none !important;
+}
 /* Phone landscape and smaller */
 @media (max-width: 767px) {
   .show-sm-block {

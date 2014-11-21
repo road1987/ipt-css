@@ -20,6 +20,12 @@
   zoom: 1;
 }
 
+.show-sm , .show-md , .show-lg{
+	&-block , &-inline , &-inline-block{
+		display : none !important;
+	}
+}
+
 /* Phone landscape and smaller */
 @media (max-width: @screen-sm-max) {
 	.show-sm {

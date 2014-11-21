@@ -579,20 +579,20 @@ a:focus {
 * =bg
 */
 .bg-primary {
-  background-color: #428BCA;
+  background-color: #428BCA !important;
   color: #FFFFFF;
 }
 .bg-success {
-  background-color: #DFF0D8;
+  background-color: #DFF0D8 !important;
 }
 .bg-info {
-  background-color: #D9EDF7;
+  background-color: #D9EDF7 !important;
 }
 .bg-warning {
-  background-color: #FCF8E3;
+  background-color: #FCF8E3 !important;
 }
 .bg-danger {
-  background-color: #F2DEDE;
+  background-color: #F2DEDE !important;
 }
 /*
 * =margin 
@@ -727,58 +727,58 @@ a:focus {
 * =text-align horizon
 */
 .align-left {
-  text-align: left;
+  text-align: left !important;
 }
 .align-center {
-  text-align: center;
+  text-align: center !important;
 }
 .align-right {
-  text-align: right;
+  text-align: right !important;
 }
 .align-justify {
-  text-align: justify;
+  text-align: justify !important;
 }
 /*
 * =text-align vertical
 */
 .valign-top {
-  vertical-align: top;
+  vertical-align: top !important;
 }
 .valign-middle {
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 .valign-bottom {
-  vertical-align: bottom;
+  vertical-align: bottom !important;
 }
 /*
 * =text-color
 */
 .text-muted {
-  color: #999999;
+  color: #999999 !important;
 }
 .text-warning {
-  color: #c09853;
+  color: #c09853 !important;
 }
 .text-error {
-  color: #b94a48;
+  color: #b94a48 !important;
 }
 .text-info {
-  color: #3a87ad;
+  color: #3a87ad !important;
 }
 .text-success {
-  color: #468847;
+  color: #468847 !important;
 }
 /*
 * =text-size & bold
 */
 .text-sm {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 .text-lg {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 .text-bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 /*
 * =display
@@ -2098,6 +2098,17 @@ input[type="button"].btn-block {
 @viewport {
   width: device-width;
   zoom: 1;
+}
+.show-sm-block,
+.show-md-block,
+.show-lg-block,
+.show-sm-inline,
+.show-md-inline,
+.show-lg-inline,
+.show-sm-inline-block,
+.show-md-inline-block,
+.show-lg-inline-block {
+  display: none !important;
 }
 /* Phone landscape and smaller */
 @media (max-width: 767px) {
