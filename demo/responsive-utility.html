@@ -28,28 +28,35 @@
 						<tr>
 							<th>#</th>
 							<th>Extra small devices <br/>Phones (&lt;768px)</th>
-							<th>Medium devices <br/> Desktops (768px <=  size  < 960px)</th>
-							<th>Large devices  <br/> Desktops (≥960px)</th>
+							<th>Small devices <br/> Desktops (768px <=  size  < 960px)</th>
+							<th>Middle devices  <br/> Desktops (960px <=  size  < 1200px)</th>
+							<th>Large devices  <br/> Desktops ( size  >= 1200px)</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>.show-sm-*</td><td class="is-show">show</td><td>hidden</td><td>hidden</td>
+							<td>.show-xs-*</td><td class="is-show">show</td><td>hidden</td><td>hidden</td><td>hidden</td>
+						</tr>	
+						<tr>
+							<td>.show-sm-*</td><td>hidden</td><td class="is-show">show</td><td>hidden</td><td>hidden</td>
 						</tr>		
 						<tr>
-							<td>.show-md-*</td><td>hidden</td><td class="is-show">show</td><td>hidden</td>
+							<td>.show-md-*</td><td>hidden</td><td>hidden</td><td class="is-show">show</td><td>hidden</td>
 						</tr>	
 						<tr>
-							<td>.show-lg-*</td><td>hidden</td><td>hidden</td><td class="is-show">show</td>
-						</tr>	
+							<td>.show-lg-*</td><td>hidden</td><td>hidden</td><td>hidden</td><td class="is-show">show</td>
+						</tr>
 						<tr>
-							<td>.hidden-sm-*</td><td>hidden</td><td class="is-show">show</td><td class="is-show">show</td>
+							<td>.hidden-xs-*</td><td>hidden</td><td class="is-show">show</td><td class="is-show">show</td><td class="is-show">show</td>
 						</tr>		
 						<tr>
-							<td>.hidden-md-*</td><td class="is-show">show</td><td>hidden</td><td class="is-show">show</td>
+							<td>.hidden-sm-*</td><td class="is-show">show</td><td>hidden</td><td class="is-show">show</td><td class="is-show">show</td>
+						</tr>		
+						<tr>
+							<td>.hidden-md-*</td><td class="is-show">show</td><td class="is-show">show</td><td>hidden</td><td class="is-show">show</td>
 						</tr>	
 						<tr>
-							<td>.hidden-lg-*</td><td class="is-show">show</td><td class="is-show">show</td><td>hidden</td>
+							<td>.hidden-lg-*</td><td class="is-show">show</td><td class="is-show">show</td><td class="is-show">show</td><td>hidden</td>
 						</tr>					
 					</tbody>
 			</table>
@@ -78,6 +85,7 @@
 			<table class="table table-bordered">
 					<thead>
 						<tr>
+							<th>show on xsmall</th>
 							<th>show on small</th>
 							<th>show on medium</th>
 							<th>show on large</th>
@@ -85,9 +93,10 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td><div class="box show-sm-block is-show"></div></td>
-							<td><div class="box show-md-block is-show"></div></td>
-							<td><div class="box show-lg-block is-show"></div></td>
+							<td><div class="box show-xs-block is-show">show</div></td>
+							<td><div class="box show-sm-block is-show">show</div></td>
+							<td><div class="box show-md-block is-show">show</div></td>
+							<td><div class="box show-lg-block is-show">show</div></td>
 						</tr>
 					</tbody>
 			</table>

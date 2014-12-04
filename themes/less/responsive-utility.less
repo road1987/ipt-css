@@ -20,15 +20,15 @@
   zoom: 1;
 }
 
-.show-sm , .show-md , .show-lg{
+.show-xs , .show-sm , .show-md , .show-lg{
 	&-block , &-inline , &-inline-block{
 		display : none !important;
 	}
 }
 
 /* Phone landscape and smaller */
-@media (max-width: @screen-sm-max) {
-	.show-sm {
+@media (max-width: @screen-xs-max) {
+	.show-xs {
 		&-block{
 			display : block !important;
 		}
@@ -42,7 +42,22 @@
 }
 
 /* Only tablets portrait */
-@media (min-width: @screen-md-min ) and (max-width: @screen-md-max) {
+@media (min-width: @screen-sm-min ) and (max-width: @screen-sm-max) {
+	.show-sm {
+		&-block{
+			display : block !important;
+		}
+		&-inline{
+			display : inline !important;
+		}
+		&-inline-block{
+			display : inline-block !important;
+		}
+	}
+}
+
+/* Desktop normal */
+@media (min-width: @screen-md-min) and (max-width : @screen-md-max) {
 	.show-md {
 		&-block{
 			display : block !important;
@@ -71,7 +86,21 @@
 	}
 }
 
-@media (max-width: @screen-sm-max) {
+@media (max-width: @screen-xs-max) {
+	.hidden-xs{
+		&-block{
+			display : none !important;
+		}
+		&-inline{
+			display : none !important;
+		}
+		&-inline-block{
+			display : none !important;
+		}
+	}
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 	.hidden-sm{
 		&-block{
 			display : none !important;
