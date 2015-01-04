@@ -1,7 +1,7 @@
 @import "config.less";
 
 /* =layout-grid  */
-.grid12 , .grid16 {
+.grid12 {
 	.box-sizing-borderbox;
 	display : block;
 
@@ -16,8 +16,7 @@
 	}
 }
 
-.grid12 ,
-.grid16 {
+.grid12 {
 	.row ,
 	.row-fluid {
 	 	[class*=span] {
@@ -28,8 +27,7 @@
 	}
 }
 
-.grid12 , 
-.grid16 { 
+.grid12 { 
 	.row:after,
 	.row-fluid:after{
 		content: "";
@@ -96,82 +94,5 @@
 		.offset10{ margin-left : 83.3332%; }
 		.offset11{ margin-left : 91.6665%; }
 		.offset12{ margin-left : 100%; }
-	}
-}
-
-
-.grid16 {
-	.row { 
-		.span1{ width : @grid-width-based/16; }
-		.span2{ width : (@grid-width-based/16)*2;}
-		.span3{ width : (@grid-width-based/16)*3;}
-		.span4{ width : (@grid-width-based/16)*4;}
-		.span5{ width : (@grid-width-based/16)*5;}
-		.span6{ width : (@grid-width-based/16)*6;}
-		.span7{ width : (@grid-width-based/16)*7;}
-		.span8{ width : (@grid-width-based/16)*8;}
-		.span9{ width : (@grid-width-based/16)*9;}
-		.span10{ width : (@grid-width-based/16)*10;}
-		.span11{ width : (@grid-width-based/16)*11;}
-		.span12{ width : (@grid-width-based/16)*12; }
-		.span13{ width : (@grid-width-based/16)*13;}
-		.span14{ width : (@grid-width-based/16)*14;}
-		.span15{ width : (@grid-width-based/16)*15;}
-		.span16{ width : (@grid-width-based/16)*16; }
-		
-		.offset1{ margin-left : @grid-width-based/16; }
-		.offset2{ margin-left : (@grid-width-based/16)*2;}
-		.offset3{ margin-left : (@grid-width-based/16)*3;}
-		.offset4{ margin-left : (@grid-width-based/16)*4;}
-		.offset5{ margin-left : (@grid-width-based/16)*5;}
-		.offset6{ margin-left : (@grid-width-based/16)*6;}
-		.offset7{ margin-left : (@grid-width-based/16)*7;}
-		.offset8{ margin-left : (@grid-width-based/16)*8;}
-		.offset9{ margin-left : (@grid-width-based/16)*9;}
-		.offset10{ margin-left : (@grid-width-based/16)*10;}
-		.offset11{ margin-left : (@grid-width-based/16)*11;}
-		.offset12{ margin-left : (@grid-width-based/16)*12; }
-		.offset13{ margin-left : (@grid-width-based/16)*13;}
-		.offset14{ margin-left : (@grid-width-based/16)*14;}
-		.offset15{ margin-left : (@grid-width-based/16)*15;}
-		.offset16{ margin-left : (@grid-width-based/16)*16; }
-	}
-}
-
-.grid16 {
-	.row-fluid { 
-		.span1{ width : 6.25%; }
-		.span2{ width : 12.5%; }
-		.span3{ width : 18.75%; }
-		.span4{ width : 25%; }
-		.span5{ width : 31.25%; }
-		.span6{ width : 37.5%; }
-		.span7{ width : 43.75%; }
-		.span8{ width : 50%; }
-		.span9{ width : 56.25%; }
-		.span10{ width : 62.5%; }
-		.span11{ width : 68.75%; }
-		.span12{ width : 75%; }
-		.span13{ width : 81.25%; }
-        .span14{ width : 87.5%; }
-		.span15{ width : 92.75%; }
-		.span16{ width : 100%; }
-		
-		.offset1{ margin-left : 6.25%; }
-		.offset2{ margin-left : 12.5%; }
-		.offset3{ margin-left : 18.75%; }
-		.offset4{ margin-left : 25%; }
-		.offset5{ margin-left : 31.25%; }
-		.offset6{ margin-left : 37.5%; }
-		.offset7{ margin-left : 43.75%; }
-		.offset8{ margin-left : 50%; }
-		.offset9{ margin-left : 56.25%; }
-		.offset10{ margin-left : 62.5%; }
-		.offset11{ margin-left : 68.75%; }
-		.offset12{ margin-left : 75%; }
-		.offset13{ margin-left : 81.25%; }
-        .offset14{ margin-left : 87.5%; }
-		.offset15{ margin-left : 92.75%; }
-		.offset16{ margin-left : 100%; }
 	}
 }
