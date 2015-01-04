@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>ipt-css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="../themes/css/ipt.css" rel="stylesheet" type="text/css"/>
+<link href="themes/css/main.css" rel="stylesheet" type="text/css"/>
+<style>
+
+</style>
+</head>
+
+<body>
+	<div id="main">
+		<h1 class="align-center"> Badges </h1>
+		<h2>normal</h2>
+		<div class="box">
+			<span class="badge">1</span> 
+			<span class="badge">1</span>
+		</div>
+	</div><!-- end of main -->
+
+	<script type="text/javascript" src="javascript/jquery-1.7.2.min.js"></script>
+	<script>
+		$(function() {
+		   var $pre = $('pre');
+		   $pre.each(function(){
+			   $(this).html($(this).html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+		   });
+		});
+	</script>
+</body>
+</html>

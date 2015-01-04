@@ -27,6 +27,12 @@ module.exports = function(grunt) {
  		       }          		
         	},
 
+        	badge : {
+ 		       files: {
+ 		          "themes/css/badge.css": "themes/less/badge.less"
+ 		       }
+        	},
+        	
         	table : {
   		       files: {
   		          "themes/css/table.css": "themes/less/table.less"

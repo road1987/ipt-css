@@ -1,0 +1,29 @@
+/* function set */
+/* typography */
+/* function */
+/* responsive-utility*/
+/* layout-grid*/
+/* form */
+/**
+* ==widget
+*/
+/* =panel */
+/*badges.css*/
+/*
+* = base
+*/
+.badge {
+  font-size: 10px;
+  line-height: 14px;
+  background-color: #39b3d7;
+  display: inline-block;
+  border: 1px solid  #269abc;
+  color: white;
+  font-weight: bold;
+  padding: 0px 5px;
+  vertical-align: middle;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -khtml-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+}
