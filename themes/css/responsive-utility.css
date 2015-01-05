@@ -52,7 +52,7 @@
   }
 }
 /* Only tablets portrait */
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .show-sm-block {
     display: block !important;
   }
@@ -64,7 +64,7 @@
   }
 }
 /* Desktop normal */
-@media (min-width: 960px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .show-md-block {
     display: block !important;
   }
@@ -98,7 +98,7 @@
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm-block {
     display: none !important;
   }
@@ -109,7 +109,7 @@
     display: none !important;
   }
 }
-@media (min-width: 960px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md-block {
     display: none !important;
   }
