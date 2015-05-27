@@ -1,5 +1,4 @@
 ipt-css
 =======
 
-css
-this is a test.
+css responsive framework.
